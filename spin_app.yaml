@@ -1,0 +1,8 @@
+apiVersion: core.spinkube.dev/v1alpha1
+kind: SpinApp
+metadata:
+  name: spin-app
+spec:
+  image: "ghcr.io/spinkube/spin-operator/hello-world:20241125-155422-g07a3175"
+  replicas: 1
+  executor: containerd-shim-spin
